@@ -1,0 +1,30 @@
+import java.awt.*;/*Создайте класс Rectangle с полями width и height. Добавьте два конструктора: один принимает два параметра
+для ширины и высоты, а другой — только один параметр (ширина и высота считаются равными). Создайте два объекта
+Rectangle в методе main: один с шириной 10 и высотой 5, другой — с шириной 7 (и высотой 7). Выведите площадь
+каждого прямоугольника.*/
+public class Lesson_8_2 {
+    public static void main(String[] args) {
+        Rectangle abcd = new Rectangle();
+        abcd.displayInfo();
+        Rectangle xyzw = new Rectangle(7);
+        xyzw.displayInfo();
+    }
+}
+class Rectangle{
+    int width;
+    int height;
+
+    public Rectangle (){
+        width = 5;
+        height = 10;
+    }
+    public Rectangle (int a){
+        this.width = a;
+        this.height = a;
+    }
+
+    void displayInfo(){
+        System.out.printf("Высота: %d \t Ширина: %d\n", width, height);
+        System.out.println("Площадь равна: "+ (width * height));
+    }
+}
